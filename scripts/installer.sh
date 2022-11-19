@@ -1,3 +1,7 @@
+# Installs Kubernetes on Ubuntu Desktop.
+#
+# This also installs the required dependencies for it as well.
+
 sudo apt-get update -y
 
 sudo apt install vim curl -y
