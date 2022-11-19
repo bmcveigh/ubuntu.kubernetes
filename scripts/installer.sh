@@ -10,10 +10,6 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 echo "Installing Docker..."
-#sudo apt-get install docker.io -y
-#curl -fsSL https://get.docker.com -o get-docker.sh
-#sudo sh get-docker.sh
-
  sudo apt-get install \
     ca-certificates \
     curl \
