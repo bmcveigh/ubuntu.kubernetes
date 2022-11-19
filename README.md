@@ -13,3 +13,8 @@ cd ubuntu.kubernetes
 ``` bash
 cat scripts/installer.sh | sh
 ```
+
+### Step 3: Run the launcher script to launch minikube.
+``` bash
+cat scripts/launcher.sh | sh
+```
