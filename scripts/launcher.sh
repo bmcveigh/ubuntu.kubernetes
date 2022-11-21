@@ -6,9 +6,11 @@ minikube start
 
 # TODO: dynamically add the services.
 cd stacks/drupal/kubernetes
-minikube kubectl -- apply -f cli-deployment.yaml,cli-service.yaml,db-deployment.yaml,db-service.yaml,web-deployment.yaml,web-service.yaml
+minikube kubectl -- apply -f cli-deployment.yaml,cli-service.yaml,db-deployment.yaml,db-service.yaml,web-deployment.yaml,web-service.yaml,solr-deployment.yaml,solr-service.yaml
 
-echo "Below are the application endpoints that can be accessed in the browser..."
+echo "Drupal endpoints..."
 minikube service web --url
+echo "Solr endpoints..."
+minikube service solr --url
 
 minikube dashboard
